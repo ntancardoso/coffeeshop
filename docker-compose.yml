@@ -1,0 +1,9 @@
+services:
+    coffeeshop:
+        image: coffeeshop_app:latest
+        ports:
+            - "8089:8085"
+        env_file:
+            - config.env
+        volumes:
+            - ./logs:/app/logs
